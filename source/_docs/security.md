@@ -57,13 +57,13 @@ Your site may also be locked and unlocked using [Terminus](/docs/terminus).
 To lock a site:
 
 ```bash
-terminus lock:enable <site>:<env> -- user password
+terminus lock:enable <site>.<env> -- user password
 ```
 
 To unlock a site:
 
 ```bash
-terminus lock:disable <site>:<env>
+terminus lock:disable <site>.<env>
 ```
 
 ## Troubleshooting
@@ -89,12 +89,12 @@ Alternatively, you can resolve 403 errors by using [Terminus](/docs/terminus) to
 <div class="tab-content" markdown="1">
 <div role="tabpanel" class="tab-pane active" id="d8" markdown="1">
 ```bash
-terminus remote:drush <site>:<env> -- pm-uninstall basic_auth -y
+terminus remote:drush <site>.<env> -- pm-uninstall basic_auth -y
 ```
 </div>
 <div role="tabpanel" class="tab-pane" id="d7" markdown="1">
 ```bash
-terminus remote:drush <site>:<env> -- pm-disable basic_auth -y
+terminus remote:drush <site>.<env> -- pm-disable basic_auth -y
 ```
 </div>
 </div>
